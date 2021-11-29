@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    
     private lazy var alertView: AlertView = {
         let cView = AlertView()
         cView.translatesAutoresizingMaskIntoConstraints = false
