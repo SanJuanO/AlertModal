@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.platform = :ios
-s.ios.deployment_target = '11.0'
+s.ios.deployment_target = '13.0'
 s.name = "AlertModal"
 s.summary = "AlertModal es un módulo de alerta"
 s.requires_arc = true
