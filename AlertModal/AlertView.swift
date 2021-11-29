@@ -92,14 +92,14 @@ class AlertView: UIView {
     
     var actions: [(UIAlertAction) -> Void] = [(UIAlertAction) -> Void]() {
         didSet {
-            if let firstAction = actions.first {
+            if actions.first != nil {
                 dismissButton.isHidden = false
 //                actionButton.addTarget(self, action: #selector(), for: .touchUpInside)
             } else {
                 dismissButton.isHidden = true
             }
             
-            if let secondAction = actions.last {
+            if actions.last != nil {
                 actionButton.isHidden = false
             } else {
                 actionButton.isHidden = true
